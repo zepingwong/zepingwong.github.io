@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="20a3af92d8a9408c8ebd729aea9d72f7" class="chart-container" style="width:600px; height:450px;"></div>
+    <div id="7c1f7d5ff84a4bd28e253a9244c47fb6" class="chart-container" style="width:550px; height:450px;"></div>
     <script>
-        var chart_20a3af92d8a9408c8ebd729aea9d72f7 = echarts.init(
-            document.getElementById('20a3af92d8a9408c8ebd729aea9d72f7'), 'white', {renderer: 'canvas'});
-        var option_20a3af92d8a9408c8ebd729aea9d72f7 = {
+        var chart_7c1f7d5ff84a4bd28e253a9244c47fb6 = echarts.init(
+            document.getElementById('7c1f7d5ff84a4bd28e253a9244c47fb6'), 'white', {renderer: 'canvas'});
+        var option_7c1f7d5ff84a4bd28e253a9244c47fb6 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -49,7 +49,7 @@
     "series": [
         {
             "type": "pie",
-            "name": "\u5927\u6c14\u6392\u653e\u91cf(g TEQ)",
+            "name": "\u603b\u91cf(g TEQ)",
             "clockwise": true,
             "data": [
                 {
@@ -86,12 +86,12 @@
                 },
                 {
                     "name": "\u5e9f\u7269\u5904\u7f6e\u548c\u586b\u57cb",
-                    "value": 47.730000000000004
+                    "value": 47.73
                 }
             ],
             "radius": [
-                "30%",
-                "50%"
+                "20%",
+                "40%"
             ],
             "center": [
                 "50%",
@@ -100,10 +100,38 @@
             "roseType": "radius",
             "label": {
                 "show": true,
-                "position": "top",
-                "color": "rgba(0, 0, 0, 0.8)",
+                "position": "outside",
                 "margin": 8,
-                "formatter": "{b}: {c}"
+                "formatter": "{b|{b}}  \n{hr|}\n  {c}{per|({d}%)}  ",
+                "backgroundColor": "#eee",
+                "borderColor": "#aaa",
+                "borderWidth": 1,
+                "borderRadius": 4,
+                "rich": {
+                    "b": {
+                        "color": "#999",
+                        "lineHeight": 18,
+                        "align": "center",
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            5
+                        ]
+                    },
+                    "hr": {
+                        "borderColor": "#aaa",
+                        "width": "100%",
+                        "borderWidth": 0.5,
+                        "height": 0
+                    },
+                    "per": {
+                        "color": "#999",
+                        "borderRadius": 2,
+                        "lineHeight": 16,
+                        "align": "center"
+                    }
+                }
             },
             "tooltip": {
                 "show": true,
@@ -178,7 +206,7 @@
         }
     ]
 };
-        chart_20a3af92d8a9408c8ebd729aea9d72f7.setOption(option_20a3af92d8a9408c8ebd729aea9d72f7);
+        chart_7c1f7d5ff84a4bd28e253a9244c47fb6.setOption(option_7c1f7d5ff84a4bd28e253a9244c47fb6);
     </script>
 </body>
 </html>
